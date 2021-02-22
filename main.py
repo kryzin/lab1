@@ -1,11 +1,15 @@
 #zad1
 a = 'jest luty'
+aa = 'nie mam psa'
 b = 2
-print(a)
-print(b)
+bb = 19
+c = 12.5
+cc = 9.99
+print('zmienna string',a,aa)
+print('zmienna int',b,bb)
+print('zmienna float',c,cc)
 
 #zad2
-print('kalkulator:')
 i = 1
 j = 3
 k = 8
@@ -22,12 +26,12 @@ print('3/1=%d' %(dzielenie))
 print('calkowite 8/3=%d' %(dzielenie_calkowite))
 
 #zad3
-b += 10
-j -= 1
-k *= 2
-b /= j
-j **= b
-k %= j
+b += 10 #b zwiekszana o 10
+j -= 1 #j zmiejszana o 1
+k *= 2 #k zwiekszana 2 razy
+b /= j #b dzielona na j
+j **= b #j do potegi b
+k %= j #reszta z dzielenia k na j
 print(b)
 print(j)
 print(k)
@@ -52,18 +56,17 @@ print('⌈4,80⌉=',liczba4)
 #zad5
 imie = 'KAROLINA'
 nazwisko = 'RYZINSKA'
-print(imie.capitalize())
-print(nazwisko.capitalize())
+print(imie.capitalize(),nazwisko.capitalize())
 
 #zad6
 piosenka = 'thats what makes you beautiful na na na na nanana'
 ile = piosenka.count('na')
-print(ile)
+print('w tekscie "na" pojawia sie',ile,'razy')
 
 #zad7
 slowo = 'september'
-print(slowo[2])
-print(slowo[-1])
+print('drugi znak slowa to',slowo[2])
+print('ostatni znak slowa to',slowo[-1])
 
 #zad8
 podzial = piosenka.split()
