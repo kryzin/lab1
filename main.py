@@ -31,3 +31,25 @@ k %= j
 print(b)
 print(j)
 print(k)
+
+#zad5
+imie = 'KAROLINA'
+nazwisko = 'RYZINSKA'
+print(imie.capitalize())
+print(nazwisko.capitalize())
+
+#zad6
+piosenka = 'thats what makes you beautiful na na na na nanana na na'
+ile = piosenka.count('na')
+print(ile)
+
+#zad7
+slowo = 'september'
+print(slowo[2])
+print(slowo[-1])
+
+#zad8
+
+
+
+
