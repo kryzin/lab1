@@ -32,6 +32,23 @@ print(b)
 print(j)
 print(k)
 
+#zad4
+from math import *
+zmienna = e
+liczba1 = pow(zmienna,10)
+print('e^10=',liczba1)
+
+liczba2 = pow(log(5+pow(sin(8),2)),1/6)
+print('pow(log(5+pow(sin(8),2)),1/6)=',liczba2)
+
+x = 3.55
+liczba3 = floor(x)
+print('⌊3,55⌋=',liczba3)
+
+y = 4.80
+liczba4 = ceil(x)
+print('⌈4,80⌉=',liczba4)
+
 #zad5
 imie = 'KAROLINA'
 nazwisko = 'RYZINSKA'
@@ -39,7 +56,7 @@ print(imie.capitalize())
 print(nazwisko.capitalize())
 
 #zad6
-piosenka = 'thats what makes you beautiful na na na na nanana na na'
+piosenka = 'thats what makes you beautiful na na na na nanana'
 ile = piosenka.count('na')
 print(ile)
 
@@ -49,7 +66,16 @@ print(slowo[2])
 print(slowo[-1])
 
 #zad8
+podzial = piosenka.split()
+print(podzial)
 
-
+#zad9
+A = 'december'
+B = 15.4
+C = hex(2238)
+print(A,B,C)
+print(type(A))
+print(type(B))
+print(type(C))
 
 
