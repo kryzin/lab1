@@ -17,3 +17,7 @@ slownik[2000] = 'Cast Away'
 slownik[2004] = 'Shrek 2'
 print(slownik[2008])
 
+#Zad3
+przedmioty = {'CAD':'CAD Komputerowe Wspomaganie Projektowania','ps':'Programowanie Strukturalne','emd':'elementy matematyki dyskretnej','wd':'wizualizacja danych'}
+x = len(przedmioty)
+print(x)
