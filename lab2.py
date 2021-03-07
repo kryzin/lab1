@@ -21,3 +21,9 @@ print(slownik[2008])
 przedmioty = {'CAD':'CAD Komputerowe Wspomaganie Projektowania','ps':'Programowanie Strukturalne','emd':'elementy matematyki dyskretnej','wd':'wizualizacja danych'}
 x = len(przedmioty)
 print(x)
+
+#Zad4
+liczba = input("podaj liczbę: ")
+liczba = int(liczba)
+liczba **= liczba
+print(liczba)
