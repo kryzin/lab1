@@ -54,3 +54,17 @@ i = 0
 for x in range(1,8):
     print(liczby[i] + liczby[i - 1])
     i += 1
+
+#Zad8
+zadanie = []
+pom = 0
+while pom != 10:
+    wartosc = input("podaj liczbę: ")
+    wartosc = float(wartosc)
+    pom += 1
+    if (wartosc%1 == 0):
+        wartosc = int(wartosc)
+        zadanie.append(wartosc)
+
+print(zadanie)
+
