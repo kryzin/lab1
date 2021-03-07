@@ -27,3 +27,4 @@ liczba = input("podaj liczbę: ")
 liczba = int(liczba)
 liczba **= liczba
 print(liczba)
+
