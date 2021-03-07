@@ -28,3 +28,9 @@ liczba = int(liczba)
 liczba **= liczba
 print(liczba)
 
+#Zad5
+import sys as system
+system.stdout.write("podaj dowolny ciąg znaków: ")
+napis = system.stdin.readline()
+ile = napis.count('a')
+print('jest ',ile,' znaków "a" w napisie')
