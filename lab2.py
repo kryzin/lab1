@@ -48,3 +48,9 @@ if (a%2==0) & (b>c):
 else:
     print('liczby nie spełniają warunków')
     
+#Zad7
+liczby = [3,5.55,89,3.14,12,12.79,15]
+i = 0
+for x in range(1,8):
+    print(liczby[i] + liczby[i - 1])
+    i += 1
