@@ -34,3 +34,17 @@ system.stdout.write("podaj dowolny ciąg znaków: ")
 napis = system.stdin.readline()
 ile = napis.count('a')
 print('jest ',ile,' znaków "a" w napisie')
+
+#Zad6
+a = input('podaj a: ')
+b = input('podaj b: ')
+c = input('podaj c: ')
+a = int(a)
+b = int(b)
+c = int(c)
+
+if (a%2==0) & (b>c):
+    print('warunek spełniony')
+else:
+    print('liczby nie spełniają warunków')
+    
