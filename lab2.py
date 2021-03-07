@@ -65,6 +65,22 @@ while pom != 10:
     if (wartosc%1 == 0):
         wartosc = int(wartosc)
         zadanie.append(wartosc)
-
 print(zadanie)
 
+#Zad9
+litera = [1,2,3,4,5,6]
+
+for x in litera:
+    if (x == 1) or (x == 6):
+        for x in litera:
+            print('o', end = '')
+        print('')
+    else:
+        for x in litera:
+            if (x == 1):
+                print('o', end = '')
+            elif (x == 6):
+                print('o')
+            else:
+                print(' ', end = '')
+                
