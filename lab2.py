@@ -84,3 +84,9 @@ for x in litera:
             else:
                 print(' ', end = '')
                 
+#Zad10
+dane = input("podaj liczbę: ")
+try:
+   dane = int(dane)
+except ValueError:
+   print("znak nie jest liczbą")
