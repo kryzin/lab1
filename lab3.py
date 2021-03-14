@@ -44,11 +44,13 @@ def ciag(a=1, b=4, ile=10):
 print(ciag())
 
 #Zad7
-def ciag2(a=1, b=4, ile=10):
-    iloczyn = a
-    for i in range(ile):
-        a *= b
-        iloczyn *= a
-    return iloczyn
+def ciag2(* ile, a=1, b=4):
+    wynik = a
+    if len(ile) == 0:
+        return 0
+    else:
+        for i in ile:
+            wynik *= (b ** i)
+         return wynik
 
 print(ciag2())
