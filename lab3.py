@@ -27,3 +27,9 @@ def czy_prostokatny(a, b, c):
         print('nie jest prostokatny')
 
 print(czy_prostokatny(5,3,4))
+
+#Zad5
+def pole_trapezu(a=20, b=26, h=12):
+    return ((a + b) * h)/2
+
+print(pole_trapezu())
