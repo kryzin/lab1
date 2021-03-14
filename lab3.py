@@ -33,3 +33,13 @@ def pole_trapezu(a=20, b=26, h=12):
     return ((a + b) * h)/2
 
 print(pole_trapezu())
+
+#Zad6
+def ciag(a=1, b=4, ile=10):
+    iloczyn = a
+    for i in range(ile):
+        iloczyn *= b ** i
+    return iloczyn
+
+print(ciag())
+
