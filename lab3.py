@@ -18,3 +18,12 @@ for x in range(1,11,1):
 
 print(lista1)
 print(lista2)
+
+#Zad4
+def czy_prostokatny(a, b, c):
+    if((a ** 2 + b ** 2) == (c ** 2)) or ((b ** 2 + c ** 2) == (a ** 2)) or ((c ** 2 + a ** 2) == (b ** 2)):
+        print('jest prostokatny')
+    else:
+        print('nie jest prostokatny')
+
+print(czy_prostokatny(5,3,4))
