@@ -19,6 +19,11 @@ for x in range(1,11,1):
 print(lista1)
 print(lista2)
 
+#Zad3
+produkty = {"paczka mąki": "sztuka", "pomidory": "kg", "ziemniaki": "kg", "szampon": "sztuka"}
+lista_prod = [key for key, value in produkty.items() if value.count("sztuka")]
+print(lista_prod)
+
 #Zad4
 def czy_prostokatny(a, b, c):
     if((a ** 2 + b ** 2) == (c ** 2)) or ((b ** 2 + c ** 2) == (a ** 2)) or ((c ** 2 + a ** 2) == (b ** 2)):
