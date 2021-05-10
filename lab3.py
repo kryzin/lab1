@@ -59,3 +59,9 @@ def ciag2(* ile, a=1, b=4):
          return wynik
 
 print(ciag2())
+#Zad8
+
+def zakupy(** produkty):
+    return len(produkty),sum(produkty.values())
+
+print(zakupy(zeszyt = 3.99, długopis = 2.99, ołówek = 1.99))
