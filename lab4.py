@@ -42,3 +42,82 @@ print(str(produkt.ile_kosztuje()) + "zl")
 produkt2 = NaZakupy("zeszyt", 1, "sztuka", 2)
 produkt2.wyswietl_produkt()
 
+#Zad5
+class ciag_arytmetyczny():
+  def __init__(self):
+    self.a1 = None
+    self.r = None
+    self.n = None
+    self.ciag = []
+    
+  def wyswietl_dane(self):
+    for element in self.ciag:
+      print(element)
+     
+  def pobierz_elementy(self):
+    while True:
+      element = input("podaj liczbe / 'koniec': ")
+      if element != 'koniec':
+        self.ciag.append(float(element))
+        else:
+          break
+  def pobierz_parametry(self):
+    a = input(" pierwszy wyraz: ")
+    self.a1 = int(a)
+    r = input(" roznica: ")
+    self.r = int(r)
+    n = input(" dlugosc ciagu")
+    self.n = int(n)
+  
+  def policz_sume(self):
+    return sum(self.ciag)
+  
+  def policz_elementy(self):
+    if (self.a1 is not None) & (self.r is not None) & (self.n is not None):
+      indeks = 1
+      self.ciag.append(self.a1)
+      while indeks != self.n:
+        self.a1 += self.r
+        self.ciag.append(self.a1)
+        indeks += 1
+        
+ciag = ciag_arytmetyczny()
+ciag.pobierz_parametry()
+
+#Zad6
+class Robaczek():
+     def __init__(self, x, y, krok):
+         self.x = x
+         self.y = y
+         self.krok = krok
+ 
+     def idz_w_gore(self, ile_krokow):
+         self.y = self.y + (ile_krokow * self.krok)
+         self.x = self.x
+ 
+     def idz_w_dol(self, ile_krokow):
+         self.y = self.y - (ile_krokow * self.krok)
+         self.x = self.x
+ 
+     def idz_w_lewo(self, ile_krokow):
+         self.y = self.y
+         self.x = self.x - (ile_krokow * self.krok)
+ 
+     def idz_w_prawo(self, ile_krokow):
+         self.y = self.y
+         self.x = self.x + (ile_krokow * self.krok)
+ 
+     def pokaz_gdzie_jestes(self):
+         print("współrzędne robaczka to x={} y={}".format(self.x, self.y))
+ 
+ robak = Robaczek(1,0,1)
+ robak.pokaz_gdzie_jestes()
+ robak.idz_w_gore(5)
+ robak.pokaz_gdzie_jestes()
+ robak.idz_w_lewo(3)
+ robak.pokaz_gdzie_jestes()
+ robak.idz_w_dol(2)
+ robak.pokaz_gdzie_jestes()
+ robak.idz_w_prawo(4)
+ robak.pokaz_gdzie_jestes()
+
