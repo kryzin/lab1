@@ -26,7 +26,7 @@ print("najpopularniejsza imie M i imie K rocznikowo: ")
 #grupa = df.groupby(['Rok']) #?? co dalej
 
 
-print("najpopularniejsze imie M i K overall: ")
-grupaPlec = df.groupby(['Plec'])
-print(grupaPlec.get_group('M').head(1))
-print(grupaPlec.get_group('K').head(1))
+#print("najpopularniejsze imie M i K overall: ")
+#grupaPlec = df.groupby(['Plec'])
+#print(grupaPlec.get_group('M').head(1))
+#print(grupaPlec.get_group('K').head(1))
