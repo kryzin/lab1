@@ -17,16 +17,12 @@ df = pd.read_excel(xlsx, header=0)
 #print(df[df['Imie']=='KAROLINA'])
 
 #print("sumy dzieci rocznikami:")
-#print(df.groupby(['Rok']).agg({'Liczba':['sum']}))
+#print(df.agg({'Liczba':['sum']}))
 
 #print("suma M i suma K:")
 #print(df.groupby(['Plec']).agg({'Liczba':['sum']}))
 
-print("najpopularniejsza imie M i imie K rocznikowo: ")
-#grupa = df.groupby(['Rok']) #?? co dalej
-
+#print("najpopularniejsza imie M i imie K rocznikowo: ")
+#print(df.sort_values('Liczba', ascending=False).groupby(['Rok', 'Plec'].nth[0])
 
 #print("najpopularniejsze imie M i K overall: ")
-#grupaPlec = df.groupby(['Plec'])
-#print(grupaPlec.get_group('M').head(1))
-#print(grupaPlec.get_group('K').head(1))
